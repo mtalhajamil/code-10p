@@ -9,7 +9,7 @@ public class Main {
         sortByEvenOdd(list);
     }
 
-    private static List<Integer> sortByEvenOdd(List<Integer> list) {
+    public static List<Integer> sortByEvenOdd(List<Integer> list) {
         List<Integer> even = new ArrayList<>();
         List<Integer> odd = new ArrayList<>();
         for(Integer num:list){
