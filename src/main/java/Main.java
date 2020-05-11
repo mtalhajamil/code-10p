@@ -1,5 +1,3 @@
-package com.company;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -8,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>(Arrays.asList(1,2,4,3,7,16));
-        List<Integer> sortedList = sortByEvenOdd(list);
+        sortByEvenOdd(list);
     }
 
     private static List<Integer> sortByEvenOdd(List<Integer> list) {
@@ -20,6 +18,7 @@ public class Main {
             else
                 odd.add(num);
         }
-
+        odd.addAll(even);
+        return odd;
     }
 }
